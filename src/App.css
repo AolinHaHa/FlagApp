@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: #f5f5f5;
+  height: 100vh;
 }
 
 .App-logo {
@@ -13,26 +15,59 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App > h3 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+.App > h4 {
+  display: inline;
+}
+.step {
+  text-decoration: underline;
+}
+.cardContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
+}
+.inputCard {
+  width: 200px;
+  margin: 0px 100px;
+  z-index: 1;
+}
+.dropDown {
+  width: 170px;
+  transform: translateX(15px);
+  padding-top: 1px;
+  z-index: 2;
+}
+.dropDown > li {
+  list-style: none;
+  height: 28px;
+  background: gray;
+  padding: 1px 0px;
+  border-bottom: 1px solid #fff;
+}
+.countryDropdown {
+  text-align: justify;
 }
 
-.App-link {
-  color: #61dafb;
+.continentDropdown > li:hover {
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+}
+.selectedContinent {
+}
+.selectedContinent > p {
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selectedContinent :nth-child(2) {
+  font-size: larger;
+  color: #f39898;
+  font-weight: 900;
+}
+.searchBoxInput {
+  width: 170px;
 }
